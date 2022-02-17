@@ -35,6 +35,11 @@ export class AppComponent{
             link: './pedidos',
             index: 1
         },
+        {
+          label: 'Crear cuenta',
+          link: './registro',
+          index: 2
+      },
     ];
 }
 
@@ -69,6 +74,11 @@ export class AppComponent{
         this.activeLinkIndex = this.navLinks.indexOf(this.navLinks.find(tab => tab.link === '.' + this.router.url));
     });
 
+  }
+
+  redirect(){
+
+    this.router.navigate(['registro'])
   }
 
 

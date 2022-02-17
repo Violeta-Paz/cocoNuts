@@ -10,8 +10,7 @@ export const environment = {
     projectId: "",
     storageBucket: "",
     messagingSenderId: "",
-    appId: "",
-    measurementId: ""
+    appId: ""
   }
   
 };
