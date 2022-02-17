@@ -1,0 +1,101 @@
+
+
+
+<mat-card class="card">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title class="title">Editar Pedido</mat-card-title>
+    <mat-card-subtitle class="subtitle">Coconuts</mat-card-subtitle>
+  </mat-card-header>
+
+<form class="form" (ngSubmit)="editPedido()" [formGroup]="pedidoEdit">
+
+  
+
+    <div>
+
+        <mat-form-field class="full-width" appearance="fill">
+        <mat-label>Nombre</mat-label>
+        <input matInput placeholder="nombre cliente" formControlName="nombre">
+        </mat-form-field>
+    </div>
+
+    <div>
+      <mat-form-field class="full-width" appearance="fill">
+          <mat-label>Contacto</mat-label>
+          <input matInput placeholder="contacto" formControlName="contacto">
+      </mat-form-field>
+    </div>
+
+    <div>
+      <mat-form-field appearance="fill" class="full-width">
+        <mat-label>Fecha Pedido</mat-label>
+        <input matInput [matDatepicker]="picker" value="fechaPedido" formControlName="fechaPedido">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+  </div>
+
+    <div>
+        <mat-form-field appearance="fill" class="full-width">
+          <mat-label>Fecha Retiro</mat-label>
+          <input matInput [matDatepicker]="picker1" value="fechaRetiro" formControlName="fechaRetiro">
+          <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+          <mat-datepicker #picker1></mat-datepicker>
+        </mat-form-field>
+    </div>
+
+    <div>
+      <section class="example-section">
+        <p><mat-checkbox formControlName="pagado">Pagado</mat-checkbox></p>
+      </section>
+
+    </div>
+
+      <div>
+        <mat-form-field class="full-width" appearance="fill">
+            <mat-label>total</mat-label>
+            <input matInput placeholder="total" formControlName="total">
+        </mat-form-field>
+      </div>
+
+    <div>
+        <mat-form-field class="example-chip-list" appearance="fill" class="full-width">
+            <mat-label>Lista Productos</mat-label>
+            <mat-chip-list #chipList aria-label="Fruit selection" >
+              <mat-chip class="chip" *ngFor="let producto of productos" (removed)="remove(producto)">
+                {{producto}}
+                <button matChipRemove>
+                  <mat-icon>cancel</mat-icon>
+                </button>
+              </mat-chip>
+              <input placeholder="Nuevo producto..."
+                     [matChipInputFor]="chipList"
+                     [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+                     [matChipInputAddOnBlur]="addOnBlur"
+                     (matChipInputTokenEnd)="add($event)">
+            </mat-chip-list>
+        </mat-form-field>
+      </div>
+
+      <div>
+
+        <mat-form-field class="example-full-width" appearance="fill" class="full-width">
+          <mat-label>Observaciones</mat-label>
+          <textarea  formControlName="observaciones" matInput placeholder="observaciones"></textarea>
+        </mat-form-field>
+      </div>
+
+      
+
+        <div class="button-row">
+          <button class="full-width" mat-raised-button color="primary" type="submit">Enviar</button> 
+        </div>
+  
+</form>
+</mat-card>
+
+
+<div class="spacer"></div>
+
+

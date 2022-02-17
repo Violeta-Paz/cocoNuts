@@ -1,1 +1,40 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { 
+    height: 100%; 
+    @media (max-width: 512px) {
+    width: max-content;
+    }
+}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+footer{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    background-color: blueviolet;
+}
+
+
+
+@media (max-width: 512px) {
+    td.mat-cell {
+        padding:2vw !important;
+      }
+    
+      td.mat-header {
+        padding:2vw !important;
+      }
+    
+      th.mat-header-cell:first-of-type {
+        padding:2vw !important;
+      }
+    
+      th.mat-header-cell {
+        padding:2vw !important;
+      }
+}
+
+
+
+

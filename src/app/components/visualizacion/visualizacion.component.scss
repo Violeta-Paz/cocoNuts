@@ -1,0 +1,53 @@
+table {
+    width: 100%;
+}
+
+
+.height{
+    width: 100%;
+    //height: 100%;
+    margin-top: 3.5vw;
+}
+
+
+
+tr.product-detail-row {
+    height: 0;
+  }
+  
+  tr.product-row:not(.example-expanded-row):hover {
+    background: whitesmoke;
+  }
+  
+  tr.product-row:not(.example-expanded-row):active {
+    background: #efefef;
+  }
+  
+  .product-row td {
+    border-bottom-width: 0;
+  }
+  
+  .product-detail {
+    overflow: hidden;
+    display: flex;
+  }
+ 
+.title-list{
+  font-family: cursive;
+  margin-top: 0.5vw;
+  color: rgb(126, 74, 7);
+}
+.producto{
+  font-family: cursive;
+  color: rgb(126, 74, 7);
+}
+
+.checkbox{
+  display: flex;
+  width: 16px;
+  height: 20px;
+  accent-color: rgb(72, 72, 182);
+}
+
+
+  

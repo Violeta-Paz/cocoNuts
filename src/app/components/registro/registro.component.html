@@ -1,0 +1,33 @@
+<mat-card class="example-card">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title class="title">Inicio Sesion</mat-card-title>
+      <mat-card-subtitle class="subtitle">Coconuts</mat-card-subtitle>
+    </mat-card-header>
+
+    <form [formGroup]="registro" (ngSubmit)="addRegistro()">
+    <mat-card-content>
+
+
+            <p>
+                <mat-form-field appearance="outline" class="input">
+                  <mat-label>Correo</mat-label>
+                  <input matInput placeholder="correo" type="email" formControlName="email">
+                </mat-form-field>
+            </p>
+    
+            <p>
+                <mat-form-field appearance="outline" class="input-pass">
+                  <mat-label>Contraseña</mat-label>
+                  <input matInput placeholder="Contraseña" type="password" formControlName="pass">
+                </mat-form-field>
+            </p>
+
+
+    </mat-card-content>
+
+      <button mat-button class="button-submit">Ingresar</button>
+
+</form>
+
+</mat-card>

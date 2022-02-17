@@ -1,0 +1,37 @@
+<mat-card class="example-card">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title class="title">Inicio Sesion</mat-card-title>
+      <mat-card-subtitle class="subtitle">Coconuts</mat-card-subtitle>
+    </mat-card-header>
+
+    <form [formGroup]="login" (ngSubmit)="ingreso()">
+    <mat-card-content class="content">
+
+
+            <p>
+                <mat-form-field appearance="outline" class="input">
+                  <mat-label>Correo</mat-label>
+                  <input matInput placeholder="correo" type="email" formControlName="email">
+                </mat-form-field>
+            
+    
+            <p>
+                <mat-form-field appearance="outline" class="input-pass">
+                  <mat-label>Contraseña</mat-label>
+                  <input matInput placeholder="Contraseña" type="password" formControlName="pass">
+                </mat-form-field>
+            </p>
+
+
+    </mat-card-content>
+    
+      <button mat-button type="submit" class="button-submit">Ingresar</button>
+
+</form>
+
+    
+        <button mat-button class="button" style="color: rgb(72, 72, 182);" (click)="google()">Ingresar con Google</button>
+      
+    <button mat-button class="button" style="color: rgb(230, 72, 44);" (click)="redirect()">Crear cuenta</button>
+</mat-card>

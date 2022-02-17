@@ -1,0 +1,57 @@
+.material-icons{
+    margin-top: 0.3vw;
+    margin-left: 0.5vw;
+    font-size: 2.5vw;
+    color: rgb(243, 160, 51);
+    @media (max-width: 821px) {
+        font-size: 3.5vw;
+    }
+    @media (max-width: 541px) {
+        font-size: 4vw;
+    }
+    @media (max-width: 415px) {
+        font-size: 5vw;
+    }
+    @media (max-width: 281px) {
+        font-size: 10vw;
+    }
+}
+
+.toolbar{
+    //width: 100%;
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 280px) {
+        height: 30vw;
+    }
+}
+
+.main-icon {
+    display: flex;
+    align-items: center;
+}
+
+.title{
+    font-size: 1.8vw;
+    font-family:cursive;
+    margin-left: 0.5vw;
+    @media (max-width: 821px) {
+        font-size: 2.3vw;
+    }
+    @media (max-width: 541px) {
+        font-size: 2.8vw;
+    }
+    @media (max-width: 415px) {
+        font-size: 3.5vw;
+    }
+    @media (max-width: 281px) {
+        font-size: 6.5vw;
+        margin-left: 0.8;
+    }
+}
+
+.button{
+    margin-left: 74vw;
+    margin-top: 0.5vw;
+    font-family: cursive;
+}

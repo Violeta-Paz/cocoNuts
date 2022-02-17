@@ -1,0 +1,172 @@
+
+.example-card {
+    max-width: 400px;
+    margin-top: 5vw;
+    margin-left: 35vw;
+    @media (max-width: 913px) {
+        margin-left: 26vw;
+    }
+    @media (max-width: 821px) {
+        width: 45vw;
+    }
+    @media (max-width: 540px) {
+        width: 55vw;
+        margin-left: 20vw;
+    
+    }
+    @media (max-width: 281px) {
+        width: 78vw;
+        margin-left: 5vw;
+        margin-top: 10vw;
+    
+    }
+}
+
+.input{
+    width: 20vw;
+    margin-top: 2vw;
+    margin-left: 2.5vw;
+    @media (max-width: 1286px) {
+        margin-left: 3.5vw;
+        width: 23vw;
+    }
+    @media (max-width: 1025px) {
+        width: 30vw;
+    }
+    @media (max-width: 913px) {
+        width: 35vw;
+    }
+    @media (max-width: 821px) {
+        margin-left: 4.5vw;
+    }
+    @media (max-width: 540px) {
+        width: 45vw;
+    
+    }
+    @media (max-width: 281px) {
+        width: 70vw;
+        margin-left: 5vw;
+    
+    }
+}
+
+.input-pass{
+    width: 20vw;
+    margin-top: 1vw;
+    margin-left: 2.5vw;
+    @media (max-width: 1286px) {
+        margin-left: 3.5vw;
+        width: 23vw;
+    }
+    @media (max-width: 1025px) {
+        width: 30vw;
+    }
+    @media (max-width: 913px) {
+        width: 35vw;
+    }
+    @media (max-width: 821px) {
+        margin-left: 4.5vw;
+    }
+    @media (max-width: 540px) {
+        width: 45vw;
+    
+    }
+    @media (max-width: 281px) {
+        width: 70vw;
+        margin-left: 5vw;
+    
+    }
+}
+
+.button-submit{
+    margin-left: 2.5vw;
+    width: 20vw;
+    background-color: rgb(88, 182, 182);
+    color: white;
+    margin-bottom: 2vw;
+    @media (max-width: 1286px) {
+        margin-left: 3.5vw;
+        width: 23vw;
+    }
+    @media (max-width: 1025px) {
+        width: 30vw;
+    }
+    @media (max-width: 913px) {
+        width: 35vw;
+    }
+    @media (max-width: 821px) {
+        margin-left: 4.5vw;
+    }
+    @media (max-width: 540px) {
+        width: 45vw;
+    
+    }
+    @media (max-width: 376px) {
+        font-size: 3.5vw;
+    
+    }
+    @media (max-width: 281px) {
+        width: 70vw;
+        margin-left: 5vw;
+        font-size: 4vw;
+    
+    }
+
+}
+
+.title{
+    margin-left: 5vw;
+    margin-top: 1vw;
+    @media (max-width: 1286px) {
+        margin-left: 6vw;
+    }
+    @media (max-width: 1025px) {
+        margin-left: 8vw;
+    }
+    @media (max-width: 913px) {
+        margin-left: 9vw;
+    }
+    @media (max-width: 760px) {
+        margin-left: 8vw;
+    }
+    @media (max-width: 540px) {
+        margin-left: 2vw;
+    }
+    @media (max-width: 540px) {
+     font-size: 4vw;
+ 
+    }
+    @media (max-width: 281px) {
+        font-size: 6vw;
+    
+    }
+}
+
+.subtitle{
+    margin-left: 6.5vw;
+    font-family: cursive;
+    @media (max-width: 1286px) {
+        margin-left: 8vw;
+    }
+    @media (max-width: 1025px) {
+        margin-left: 10.5vw;
+    }
+    @media (max-width: 913px) {
+        margin-left: 11.5vw;
+    }
+    @media (max-width: 760px) {
+        margin-left: 11vw;
+    }
+    @media (max-width: 540px) {
+        margin-left: 7vw;
+    }
+    @media (max-width: 540px) {
+        font-size: 3vw;
+    
+    }
+    @media (max-width: 281px) {
+        font-size: 4vw;
+        margin-left: 10vw;
+    
+    }
+}
